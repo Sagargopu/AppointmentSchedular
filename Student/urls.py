@@ -5,4 +5,5 @@ urlpatterns = [
     path('students/',views.Students,name='students'),
     path('profile/',views.Profile,name='profile'),
     path('viewappointments/<str:pk>/',views.ViewAppointments,name='viewappointments'),
+    path('confirm-appointment/<str:appointment_id>/',views.ConfirmAppointment,name='confirm_appointment'),
 ]
